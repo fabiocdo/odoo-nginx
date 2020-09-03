@@ -1,8 +1,8 @@
 #odoo server
-upstream odooWeb {
+upstream odoo {
     server 127.0.0.1:8069;
 }
-upstream odooLongpolling {
+upstream odoochat {
     server 127.0.0.1:8072;
 }
 
