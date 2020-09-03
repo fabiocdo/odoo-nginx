@@ -26,12 +26,12 @@ server {
     # Redirect requests to odoo backend server
     location / {
         proxy_redirect off;
-        proxy_pass http://odooWeb;
+        proxy_pass http://odoo;
     }
     
     # Redirect longpoll requests to odoo longpolling port
     location /longpolling {
-        proxy_pass http://odooLongpolling;
+        proxy_pass http://odoochat;
     }   
 
     # common gzip
